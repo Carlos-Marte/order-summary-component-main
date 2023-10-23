@@ -15,17 +15,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   </head>
 <body>
-  Order Summary
+  <!-- Main -->
+  <main class="main">
+    <!-- Order Summary Card -->
+    <section class="orderSummaryCard">
+      <!-- Header -->
+      <header class="orderSummaryCard__header">
+        <img src=".-/images/illustration-hero.svg" alt="Order summary hero image" class="orderSummaryCard__img" loading="lazy">
+      </header>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <!-- Main -->
+      <main class="orderSummaryCard__main">
+        <h1 class="orderSummaryCard__h1">Order Summary</h1>
 
-  Annual Plan
-  $59.99/year
+        <p class="orderSummaryCard__p">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!          
+        </p>
 
-  Change
+        <div class="PlanList">
+          <img src="./images/icon-music.svg" alt="Icon music" class="PlanList__icon">
 
-  Proceed to Payment
-  Cancel Order
+          <div class="PlanList__planData">
+            <p class="PlanList__p">Annual Plan</p>
+            <span class="PlanList__span">$59.99/year</span>
+          </div>
+
+          <button class="PlanList__button">Change</button>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="orderSummaryCard__footer">
+        <button class="orderSummaryCard__button">Proceed to Payment</button>
+
+        <a href="#" class="orderSummaryCard__link">Cancel order</a>
+      </footer>
+    </section>
+  </main>
 </body>
 </html>
