@@ -13,8 +13,133 @@
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
 }
 
 html {
   font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+/* Main */
+.main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 0 1em;
+  background: var(--pale-blue);
+}
+
+.orderSummaryCard {
+  max-width: 400px;
+  min-width: 320px;
+  background: var(--white);
+  border-radius: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.orderSummaryCard__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.orderSummaryCard__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1.5em;
+}
+
+.orderSummaryCard__h1 {
+  font-weight: 900;
+}
+
+.orderSummaryCard__p {
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+}
+
+.orderSummaryCard__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0 1em 1.5em;
+}
+
+.orderSummaryCard__button {
+  background: var(--bright-blue);
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-radius: 0.8em;
+  color: var(--white);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.orderSummaryCard__button:hover {
+  opacity: 0.7;
+  box-shadow: 0 10px 15px 0 hsla(245, 75%, 52%, 0.193);
+}
+
+.orderSummaryCard__link {
+  font-weight: 700;
+  color: var(--desaturated-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.orderSummaryCard__link:hover {
+  color: var(--dark-blue);
+}
+
+.PlanList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: var(--very-pale-blue);
+  border-radius: 1em;
+}
+
+.PlanList__planData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.PlanList__p {
+  font-size: 0.95em;
+  font-weight: 900;
+}
+
+.PlanList__span {
+  font-size: 0.9em;
+  color: var(--desaturated-blue);
+}
+
+.PlanList__button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--bright-blue);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.PlanList__button:hover {
+  opacity: 0.8;
+  text-decoration: none;
 }
